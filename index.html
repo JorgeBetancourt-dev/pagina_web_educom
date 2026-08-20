@@ -20,24 +20,18 @@
       <a href="#segmentos">Para quién es</a>
       <a href="#planes">Planes</a>
     </div>
-    <a href="#planes" class="nav-cta">Solicitar demo</a>
+
   </nav>
 </header>
 
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Prototipo visual</span>
       <h1>La comunicación entre <em>el colegio y la familia</em>, en un solo sistema</h1>
       <p class="lead">EduCom centraliza inscripciones, asistencias, rendimiento académico  y lo pone al alcance de los padres en una app pensada para ellos.</p>
       <div class="hero-actions">
-        <button class="btn-primary" >Ver la plataforma ↓</button>
-        <button class="btn-ghost" >Hablar con el equipo</button>
-      </div>
-      <div class="hero-stats">
-        <div><b>01</b><span>Un sistema pensado para la familia</span></div>
-        <div><b>IA</b><span>corrección automática de exámenes</span></div>
-        <div><b>24/7</b><span>chatbot y acceso desde cualquier lugar</span></div>
+        <a class="btn-primary" href="#demo">Ver la plataforma ↓</a>
+        <a class="btn-ghost" href="#contacto">Hablar con el equipo</a>
       </div>
     </div>
     <div class="loop-wrap reveal">
@@ -272,43 +266,23 @@
 
 <section class="pricing" id="planes">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Fuentes de ingresos</span>
-      <h2>Planes pensados para el tamaño de cada institución</h2>
-    </div>
-    <div class="price-grid">
-      <div class="price-card reveal">
-        <span class="tag">Institución</span>
-        <div class="price">Suscripción<span> / mensual</span></div>
-        <p>Para colegios que están empezando a digitalizar su gestión académica.</p>
-        <ul>
-          <li>Control de inscripciones y asistencia</li>
-          <li>Seguimiento de rendimiento</li>
-          <li>App para padres incluida</li>
-        </ul>
-        <div class="price-btn">Solicitar información</div>
+    <div class="price-card-single reveal">
+      <div class="price-main">
+        <span class="tag">Suscripción Todo Incluido</span>
+        <div class="price">Plan EduCom <span> / mensual por estudiante</span></div>
+        <p>Acompañamos el crecimiento de tu colegio con una tarifa escalable que cubre el acceso completo para la administración, docentes y familias.</p>
+        <button class="btn-primary">Solicitar cotización personalizada</button>
       </div>
-      <div class="price-card feat reveal">
-        <span class="tag">Por estudiante</span>
-        <div class="price">Escalable<span> / según matrícula</span></div>
-        <p>El plan crece con la cantidad de estudiantes activos en la plataforma.</p>
-        <ul>
-          <li>Todo lo del plan Institución</li>
-          <li>Corrección de exámenes con IA</li>
-          <li>Chatbot personalizado</li>
+
+      <div class="price-features">
+        <h3>Todo lo que incluye:</h3>
+        <ul class="features-list">
+          <li><strong>Gestión Centralizada:</strong> Inscripciones, matrículas y control de asistencias diarias sin planillas duplicadas.</li>
+          <li><strong>IA de Corrección:</strong> Procesamiento automático de exámenes y detección temprana de alertas académicas.</li>
+          <li><strong>App Móvil para Familias:</strong> Notificaciones de asistencia, notas, tareas y canal de comunicación directa.</li>
+          <li><strong>Chatbot Inteligente:</strong> Respuestas automáticas a consultas frecuentes de padres y coordinación.</li>
+          <li><strong>Soporte y Mantenimiento:</strong> Actualizaciones continuas, respaldo de datos y atención prioritaria.</li>
         </ul>
-        <div class="price-btn">Solicitar información</div>
-      </div>
-      <div class="price-card reveal">
-        <span class="tag">Premium</span>
-        <div class="price">Personalizado<span> / a medida</span></div>
-        <p>Funcionalidades adicionales y soporte prioritario para redes de colegios.</p>
-        <ul>
-          <li>Todo lo del plan Por estudiante</li>
-          <li>Servicios adicionales personalizados</li>
-          <li>Soporte y mantenimiento prioritario</li>
-        </ul>
-        <div class="price-btn">Solicitar información</div>
       </div>
     </div>
   </div>
@@ -325,72 +299,10 @@
 
 <footer>
   <div class="wrap">
-    <div class="foot-top">
-      <div>
-        <div class="brand"><span class="brand-mark"></span><span class="edu">Edu</span><span class="com">Com</span></div>
-        <p style="margin-top:10px; max-width:220px; font-size:13.5px;">El valor de la comunicación.</p>
-      </div>
-      <div class="foot-cols">
-        <div class="foot-col">
-          <h4>Producto</h4>
-          <a href="#producto">¿Que somos?</a>
-          <a href="#demo">Demo interactiva</a>
-          <a href="#planes">Planes</a>
-        </div>
-        <div class="foot-col">
-          <h4>Canales</h4>
-          <a href="#">Plataforma web</a>
-          <a href="#">Aplicación móvil</a>
-          <a href="#">Redes sociales</a>
-        </div>
-        <div class="foot-col">
-          <h4>Socios clave</h4>
-          <a href="#">Hosting y servidores</a>
-          <a href="#">Servicios de IA</a>
-          <a href="#">Asesores educativos</a>
-        </div>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>Prototipo visual — no representa un producto en producción</span>
-      <span>EduCom © 2026</span>
-    </div>
-  </div>
+ 
 </footer>
 
-<div class="badge-proto">PROTOTIPO</div>
-
-<script>
-  // header scroll state
-  const header = document.getElementById('header');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 30);
-  });
-
-  // scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
-
-  // hero loop draw animation
-  const loopCircle = document.getElementById('loopCircle');
-  setTimeout(() => { loopCircle.style.transition = 'stroke-dashoffset 1.8s cubic-bezier(.65,0,.35,1)'; loopCircle.style.strokeDashoffset = '0'; }, 300);
-
-  // demo tabs
-  const tabs = document.querySelectorAll('.demo-tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      document.querySelectorAll('.demo-panel').forEach(p => p.classList.remove('active'));
-      document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
-    });
-  });
-
-  // smooth anchor scroll offset handled by CSS scroll-behavior
+<script src="function.js"></script>
 </script>
-
 </body>
 </html>
